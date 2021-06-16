@@ -12,6 +12,12 @@ public class Issue {
 	private IssueDTO issue;
 	private Long issueId;
 	private RepositoryDTO repository;
+	
+	public Issue(String action, long issueId) {
+		this.action = action;
+		this.issueId = issueId;
+	}
+	
 	public String getId() {
 		return id;
 	}
