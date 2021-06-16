@@ -18,6 +18,10 @@ public class Issue {
 		this.issueId = issueId;
 	}
 	
+	public Issue(Long issueId) {
+		this.issueId = issueId;
+	}
+
 	public String getId() {
 		return id;
 	}
