@@ -1,4 +1,4 @@
-package com.apirest.octoevents.octoevents;
+package com.apirest.octoevents;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
