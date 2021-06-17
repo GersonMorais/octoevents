@@ -3,10 +3,10 @@ package com.apirest.octoevents.entity;
 public class IssueDTO {
 
 	private String title;
+	private String body;
 	private String number;
 	private String created_at;
 	private String updated_at;
-	private String pushed_at;
 	
 	public String getTitle() {
 		return title;
@@ -32,13 +32,11 @@ public class IssueDTO {
 	public void setUpdated_at(String updated_at) {
 		this.updated_at = updated_at;
 	}
-	public String getPushed_at() {
-		return pushed_at;
+	public String getBody() {
+		return body;
 	}
-	public void setPushed_at(String pushed_at) {
-		this.pushed_at = pushed_at;
+	public void setBody(String body) {
+		this.body = body;
 	}
-	
-	
 	
 }
