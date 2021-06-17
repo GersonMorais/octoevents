@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.reactive.function.server.ServerResponse;
 
 import com.apirest.octoevents.entity.Issue;
 import com.apirest.octoevents.services.IssueService;
@@ -34,8 +35,10 @@ public class IssueController {
 		return issueService.save(issue);
 	}
 	
-	@GetMapping(value="/issues/{id}/events")
-	public Flux<Issue> findByAction(@PathVariable String id){
-		return issueService.findByIdIssue(id);
+	@ApiOperation(value="List issues by number")
+	@GetMapping(value="/issues/{number}/events")
+	public Flux<Issue> findByNumber(@PathVariable String number){
+		return issueService.findByNumber(number);
 	}
+	
 }

@@ -9,6 +9,6 @@ public interface IssueService {
 
 	Mono<Issue> save(Issue issue);
 
-	Flux<Issue> findByIdIssue(String issueId);
+	Flux<Issue> findByNumber(String number);
 	
 }

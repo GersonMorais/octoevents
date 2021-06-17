@@ -28,7 +28,9 @@ class OctoeventsApplicationTests {
 	
 	@Test
 	public void testCreateIssue() {
-		Issue issue = new Issue("open", (long) 10);
+		Issue issue = new Issue();
+		issue.setAction("open");
+//		issue.setIssueId((long) 10);
 		Mono<Issue> issueMono = Mono.just(issue); 
 		when(issueService.save(issue)).thenReturn(issueMono);
 		
