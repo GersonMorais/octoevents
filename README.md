@@ -20,7 +20,7 @@ Este projeto foi desenvolvido com objetivo de avaliação do team da jayatech.
     - É necessario ter uma conta no MongoDB Atlas:
         - Link para criação de conta: https://account.mongodb.com/account/login
     - Após a criação da conta, você deve criar um cluster:
-    - Com o cluster criado, clique em **CONNECT**, para obter a string de conexão. Essa string de conexão deve ser inserida no arquivo **aplication.properties** do projeto.
+    - Com o cluster criado, clique em **CONNECT**, para obter a string de conexão. Essa string de conexão deve ser inserida no arquivo **aplication.properties** (precedida de spring.data.mongodb.uri=) do projeto.
     - Pode ser usado para visualização dos dados o MongoDB Compass. 
         - Link para download: https://www.mongodb.com/try/download/compass
 
