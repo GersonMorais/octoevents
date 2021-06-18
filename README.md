@@ -50,3 +50,10 @@ Este projeto foi desenvolvido com objetivo de avaliação do team da jayatech.
 ## Endpoints criados
     POST /issues
     GET /issues/{number}/events
+
+	    
+## Swagger
+Para acessar a documentação, foi criado um swagger com as informações dos endpoints.
+### Como usar
+    1 - Rodar a aplicação;
+    2 - Acessar: http://localhost:8080/swagger-ui.html
